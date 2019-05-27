@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Radio } from './radio';
 
 @Component({
   selector: 'app-radio',
@@ -7,13 +8,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class RadioComponent implements OnInit {
   @Input()
-  entities: any;
+  entities: Radio[];
 
   @Input()
   id: string;
 
   @Input()
-  value: any;
+  value: string;
 
   @Output()
   valueChange: EventEmitter<string> = new EventEmitter();
