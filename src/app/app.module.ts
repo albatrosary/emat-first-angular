@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { ItemsComponent } from './items/items.component';
 import { ItemComponent } from './item/item.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { RadioComponent } from './radio/radio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     ItemsComponent,
-    ItemComponent
+    ItemComponent,
+    CheckboxComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,

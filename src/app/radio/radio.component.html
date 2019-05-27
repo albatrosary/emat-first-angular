@@ -1,0 +1,12 @@
+<ng-container *ngFor="let entity of entities">
+  <input
+    id="{{id+'-'+entity.value}}"
+    type="radio"
+    name={{name}}
+    value={{entity.value}}
+    [(ngModel)]="value"
+    (ngModelChange)="change()"
+    checked="value===entity.value"
+  >
+  <label for="{{id+'-'+entity.value}}">{{entity.label}}</label>
+</ng-container>

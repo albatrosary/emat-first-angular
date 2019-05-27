@@ -1,0 +1,9 @@
+<ng-container *ngFor="let entity of entities">
+  <input
+    id="{{id+'-'+entity.value}}"
+    type="checkbox"
+    name={{entity.label}}
+    value={{entity.value}}
+    [(ngModel)]="entity.checked">
+  <label for="{{id+'-'+entity.value}}">{{entity.label}}</label>
+</ng-container>

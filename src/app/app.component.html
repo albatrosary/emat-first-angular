@@ -1,6 +1,23 @@
-<app-register
-(event)="event($event)"
-></app-register>
-<app-items
-[items]="items"
-><app-items>
+<div>
+  <app-register
+  (event)="event($event)"
+  ></app-register>
+  <app-items
+  [items]="items"
+  ></app-items>
+</div>
+
+<div>
+  <app-checkbox
+  [id]="'checkbox'"
+  [entities]="checkboxs"
+  ></app-checkbox>
+</div>
+<div>
+  <app-radio
+  [(value)]="radioValue"
+  [id]="'radio'"
+  [entities]="radios"
+  ></app-radio>
+</div>
+<button (click)="dump()">ボタン</button>
