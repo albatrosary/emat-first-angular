@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { Checkbox } from './checkbox';
 @Component({
   selector: 'app-checkbox',
   templateUrl: './checkbox.component.html',
@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class CheckboxComponent implements OnInit {
 
   @Input()
-  entities: any;
+  entities: Checkbox[];
 
   @Input()
   id: string;
